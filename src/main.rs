@@ -4,7 +4,7 @@ use serde_json::{json, Value};
 //
 fn main() {
     //connect with mongodb
-    let client= Client::with_uri_str("mongodb+srv://Umer:123@cluster0-ncigb.mongodb.net/test?retryWrites=true&w=majority").expect("Failed to connect");
+    let client= Client::with_uri_str("mongodb+srv://<username>:<password>@cluster0-ncigb.mongodb.net/test?retryWrites=true&w=majority").expect("Failed to connect");
     //make database and a collection
     let db = client.database("test123").collection("user_details");
     // inserting a document
